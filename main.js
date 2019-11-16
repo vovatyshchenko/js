@@ -20,3 +20,6 @@ $(function(){
         $('.div__2').hide();
     });
 })
+$(function(event){
+    event.preventDefault;
+})
