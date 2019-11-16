@@ -1,0 +1,13 @@
+.error{
+    border: 1px #ff0000 solid;
+}
+.div__1{
+    width: 100px;
+    height: 100px;
+    background-color: #808080;
+}
+.div__2{
+    width: 100px;
+    height: 100px;
+    background-color: #c0c0c0;
+}
