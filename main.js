@@ -16,6 +16,20 @@ let a=prompt('1 num',''),
     calcu = new Calc(a, b);
 let s=calcu.sum(),
     m=calcu.mul();
+//пример  ajax запроса
+$(function(){
+    $('form').submit(function(event){
+        $.ajax({
+            type: $('form').attr('method'),
+            url: 'data.html',
+            data: $('#form').serialize(),
+            success: function(answ){
+                $('div').text(answ);
+            }
+        })
+        event.preventDefault();
+    });
+})
 //возвращеет сумму числовых элементов в массиве
 //@param array массив
 //@return num сумма числовыых элементов
